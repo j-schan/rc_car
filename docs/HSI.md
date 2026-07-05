@@ -9,13 +9,13 @@
 
 | 핀 | 신호 | AF/모드 | 방향 | 보드 라벨 | 연결 대상 | 설명 |
 |----|------|---------|:---:|:---------:|-----------|------|
-| PA6 | TIM3_CH1 | PWM 1kHz | 출력 | D12 (CN5) | L298N ENA | 모터L 속도 (듀티 0~999) |
+| PA6 | TIM3_CH1 | PWM 1kHz | 출력 | D12 (CN5) | L298N ENA | 모터L 속도 (듀티 0\~999) |
 | PA7 | TIM3_CH2 | PWM 1kHz | 출력 | D11 (CN5) | L298N ENB | 모터R 속도 |
 | PB0 | IN1 | GPIO_Output | 출력 | A3 (CN8) | L298N IN1 | 모터L 방향 |
 | PB1 | IN2 | GPIO_Output | 출력 | CN10 (D7 맞은편) | L298N IN2 | 모터L 방향 |
 | PB2 | IN3 | GPIO_Output | 출력 | CN10 (D8 맞은편) | L298N IN3 | 모터R 방향 |
 | PB4 | IN4 | GPIO_Output | 출력 | D5 (CN9) | L298N IN4 | 모터R 방향 |
-| PA0 | TIM2_CH1 | PWM 50Hz | 출력 | A0 (CN8) | 서보 신호선 | 조향 (1100~1900µs, 중립 1500) |
+| PA0 | TIM2_CH1 | PWM 50Hz | 출력 | A0 (CN8) | 서보 신호선 | 조향 (1100\~1900µs, 중립 1500) |
 | PA9 | USART1_TX | AF7 | 출력 | D8 (CN5) | HC-05 **RXD** | BT 송신 (★엇갈림) |
 | PA10 | USART1_RX | AF7 | 입력 | D2 (CN9) | HC-05 **TXD** | BT 수신, 인터럽트 |
 | PA2 | USART2_TX | AF7 | 출력 | (ST-Link 내부) | PC 가상COM | 디버그 115200 |
@@ -31,8 +31,8 @@
 | PB6 / PB7 | TIM4_CH1/CH2 | Encoder Mode | 모터L 엔코더 A/B | 1320 cnt/rev |
 | PC6 / PC7 | TIM8_CH1/CH2 | Encoder Mode | 모터R 엔코더 A/B | |
 | PB8 / PB9 | I2C1 SCL/SDA | I2C | IMU·OLED 등 | 공유 버스 |
-| PC0~PC2 | GPIO_Output | — | 초음파 Trig ×3 | 전방/좌/우 |
-| PC3~PC5 | EXTI | — | 초음파 Echo ×3 | 펄스폭 측정 |
+| PC0\~PC2 | GPIO_Output | — | 초음파 Trig ×3 | 전방/좌/우 |
+| PC3\~PC5 | EXTI | — | 초음파 Echo ×3 | 펄스폭 측정 |
 
 ## Phase 3+ — 예약 (컴패니언·확장)
 
@@ -41,7 +41,7 @@
 | PB10 / PB11 | USART3 TX/RX | 라즈베리파이 5 | cmd_vel/odom, ROS2 링크 ★ |
 | PC10 / PC11 | UART4 TX/RX | LiDAR/GPS 예비 | |
 | PA1 | TIM2_CH2 | 예비 서보 | 카메라 짐벌 등 |
-| PB12~PB15 | SPI2 | nRF24/SD 등 예비 | |
+| PB12\~PB15 | SPI2 | nRF24/SD 등 예비 | |
 | **PA11 / PA12** | **CAN1 RX/TX (AF9)** | SN65HVD230 트랜시버 | 미니 SDV 버스, 500kbps |
 
 ## 자유 예비 핀
