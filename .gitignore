@@ -1,0 +1,13 @@
+# 빌드 산출물 (자동 생성 — 저장소에 불필요)
+Debug/
+Release/
+build/
+
+# CubeIDE 로컬 설정 (개인 환경 종속)
+.metadata/
+*.launch
+
+# 백업/임시 파일
+*.bak
+*~
+*.tmp
